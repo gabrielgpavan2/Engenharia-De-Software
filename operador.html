@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>AG Controles</title>
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/key.png" />
+</head>
+
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-success border-bottom border-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="main.html">
+                        <img src="imgs/key.png" width="30" height="30" alt="">
+                        Página Inicial
+                        <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ml-lg-5" href="sobreNos.html">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ml-lg-5" href="operador.html">Operador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ml-lg-5" href="cliente.html">Cliente</a>
+                </li>
+                <li class="nav-item dropdown ml-lg-5">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="imgs/user.png" width="30" height="30" alt="">
+                        Nome
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Sair</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-lg-5">
+        <div class="row  d-flex justify-content-center">
+            <div class="col-5 px-lg-5 border border-right-0 border-bottom-0 border-dark">
+                <form>
+                    <div class="form-group  mt-5">
+                        <label for="matriculaCliente">Matrícula Cliente</label>
+                        <input class="form-control" id="matriculaCliente" type="text"
+                            placeholder="Matrícula do Cliente">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Chave</label>
+                        <select class="custom-select">
+                            <option selected>Nenhuma opção selecionada</option>
+                            <option value="1">Laboratório de Informática 1</option>
+                            <option value="2">Laboratório de Informática 2</option>
+                            <option value="3">Laboratório de Informática 3</option>
+                            <option value="4">Laboratório de Informática 4</option>
+                            <option value="5">Laboratório de Informática 5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Projetor</label>
+                        <select class="custom-select">
+                            <option selected>Nenhuma opção selecionada</option>
+                            <option value="1">Projetor 1</option>
+                            <option value="2">Projetor 2</option>
+                            <option value="3">Projetor 3</option>
+                            <option value="4">Projetor 4</option>
+                            <option value="5">Projetor 5</option>
+                        </select>
+                        <small id="senhaAjuda" class="form-text text-muted">Todos os registros estarão salvos em um
+                            arquivo LOG.</small>
+                    </div>
+                </form>
+            </div>
+            <div class="col-5 px-lg-5 border border-left-0 border-bottom-0 border-dark">
+                <form class="was-validated mt-5">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                        <label class="custom-file-label" for="validatedCustomFile">Escolher arquivo...</label>
+                    </div>
+                </form>
+                <div class="mt-lg-4">
+                    <img src="imgs/test.jpg" class="img-fluid rounded" alt="Foto código objeto">
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-10 border border-top-0 border-dark">
+                <div class="d-flex justify-content-center mt-3 mb-5">
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalExemplo">
+                        Registrar
+                    </button>
+                    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Aviso!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body" style="text-align: center">
+                                    Coleta de objeto(s) registrado com sucesso.
+                                </div>
+                                <div class="modal-footer justify-content-center">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
