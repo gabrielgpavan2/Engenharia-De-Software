@@ -9,14 +9,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/estilo.css">
     <title>AG Controles</title>
     <link rel="shortcut icon" type="image/x-icon" href="imgs/key.png" />
 </head>
 
-<body class="bg-light">
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-success border-bottom border-dark">
+<body class="blue-grey">
+    <nav class="navbar navbar-expand-lg navbar-light myblue border-bottom border-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
@@ -24,37 +23,27 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">
-                        <img src="imgs/key.png" width="30" height="30" alt="">
+                    <a class="nav-link myblue up" href="index.html">
+                        <!-- <img src="imgs/key.png" width="30" height="30" alt=""> -->
                         Página Inicial
                         <span class="sr-only">(Página atual)</span></a>
                 </li>
-                <li class="nav-item">
+                <!--<li class="nav-item">
                     <a class="nav-link ml-lg-5" href="sobreNos.html">Sobre Nós</a>
+                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link ml-lg-5 myblue up" href="operador.html">Operador</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ml-lg-5" href="operador.html">Operador</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link ml-lg-5" href="cliente.html">Cliente</a>
-                </li>
-                <li class="nav-item dropdown ml-5">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="imgs/user.png" width="30" height="30" alt="">
-                        Nome
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Sair</a>
-                    </div>
+                    <a class="nav-link ml-lg-5 myblue up" href="cliente.html">Cliente</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="container mt-lg-5">
-        <div class="row  d-flex justify-content-center">
-            <div class="col-5 px-5 border border-right-0 border-bottom-0 border-dark">
+    <div class="container mt-lg-5 border border-dark bg-light mt-5">
+        <div class="row  d-flex justify-content-center ">
+            <div class="col-md-5 px-5  bg-light">
                 <form>
                     <div class="form-group  mt-5">
                         <label for="matriculaCliente">Matrícula Cliente</label>
@@ -87,7 +76,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-5 px-5 border border-left-0 border-bottom-0 border-dark">
+            <div class="col-md-5 px-5 ">
                 <form class="was-validated mt-5">
                     <div class="custom-file">
                         <input type="file" class="custom-file-input" id="validatedCustomFile" required>
@@ -99,8 +88,8 @@
                 </div>
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col-10 border border-top-0 border-dark">
+        <div class="row d-flex justify-content-center ">
+            <div class="col-10 ">
                 <div class="d-flex justify-content-center mt-3 mb-5">
                     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalExemplo">
                         Registrar

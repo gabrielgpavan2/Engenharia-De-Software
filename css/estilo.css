@@ -1,5 +1,12 @@
-@media screen and (max-width: 500px) {
-    .sumiu{
-        display: block !important;
-    }
-  }
+.myblue {
+    background-color: #102372 !important;
+    color: white !important;
+}
+
+.blue-grey {
+    background-color: #607d8b !important;
+}
+
+.up {
+    text-transform: uppercase !important;
+}
